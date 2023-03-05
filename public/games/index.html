@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <turbo-frame id="modal">
+    <div id="modal">
+      <div class="nes-container with-title is-centered">
+        <p class="title">
+          Choisir une partie
+          <a href="/" data-turbo-frame="modal">[X]</a>
+        </p>
+        <p>
+          <label for="default_select">Partie</label>
+          <div class="nes-select">
+            <select required id="default_select">
+              <option value="" disabled selected hidden>Choisir...</option>
+              <option value="beginner">1: Xxx</option>
+              <option value="advanced">2: Yyy</option>
+            </select>
+          </div>
+          <br>
+          <button type="button" class="nes-btn is-primary">Continuer la partie</button>
+            </p>
+      </div>
+    </div>
+  </turbo-frame>
+</body>
+</html>

@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/ruby_warrior_web.rb'
+require 'json'
+
+# TODO: Implement a proper runner
+include RubyWarriorWeb
+profile = build_profile(:beginner, 'Spartacus')
+puts play(profile).to_json

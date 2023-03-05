@@ -1,0 +1,26 @@
+<body class="main" data-controller="scene">
+  <div class="menu">
+    <button type="button" data-action="scene#walk" class="nes-btn is-primary">Lancer</button>
+    <button type="button" data-action="scene#drawLevel" class="nes-btn is-primary">Annuler</button>
+    <button type="button" class="nes-btn is-primary">Indice</button>
+    <button type="button" class="nes-btn is-primary">Niveau suivant</button>
+  </div>
+  <div class="content">
+    <div class="left">
+      <div class="instructions">Niveau 1
+
+Vous voyez devant vous un long couloir avec des escaliers à la fin. Il n'y a rien d'autre sur le chemin.
+
+Astuce: Utiliser la méthode "warrior.walk!" pour marcher vers l'avant dans la méthode 'play_turn' de Player.
+
+Compétences du guerrier (warrior) :
+
+  warrior.walk!
+    Se déplace dans la direction indiquée (vers l'avant (forward) par défaut).</div>
+      <div class="scene" data-scene-target="container">
+      </div>
+    </div>
+    <div class="editor" data-controller="editor"  data-editor-target="container">
+    </div>
+  </div>
+</body>

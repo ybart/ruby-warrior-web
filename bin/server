@@ -1,0 +1,4 @@
+#!/bin/sh
+
+ruby -run -e httpd public -p 4567
+

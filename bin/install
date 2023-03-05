@@ -1,0 +1,11 @@
+#!/bin/sh
+
+bundle
+yarn --ingore-engines
+
+# TODO: Remplacer par esbuild dans la section scripts de package.json
+cp node_modules/nes.css/css/nes.min.css public/vendor
+cp -R node_modules/monaco-editor/min/vs public/vendor
+cp node_modules/@hotwired/stimulus/dist/stimulus.umd.js public/vendor
+cp node_modules/@hotwired/turbo/dist/turbo.es2017-umd.js public/vendor
+cp node_modules/pixi.js/dist/pixi.min.js public/vendor

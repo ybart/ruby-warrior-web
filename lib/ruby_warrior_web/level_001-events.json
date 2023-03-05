@@ -1,0 +1,98 @@
+{
+  "turns": [
+    { "turn": 0, "floor_map": " --------\n|@      >|\n --------\n" },
+    {
+      "turn": 1,
+      "events": [
+        {
+          "unit": "Player",
+          "action": "walk",
+          "direction": "forward",
+          "from": [0, 0],
+          "to": [1, 0]
+        }
+      ],
+      "floor_map": " --------\n| @     >|\n --------\n"
+    },
+    {
+      "turn": 2,
+      "events": [
+        {
+          "unit": "Player",
+          "action": "walk",
+          "direction": "forward",
+          "from": [1, 0],
+          "to": [2, 0]
+        }
+      ],
+      "floor_map": " --------\n|  @    >|\n --------\n"
+    },
+    {
+      "turn": 3,
+      "events": [
+        {
+          "unit": "Player",
+          "action": "walk",
+          "direction": "forward",
+          "from": [2, 0],
+          "to": [3, 0]
+        }
+      ],
+      "floor_map": " --------\n|   @   >|\n --------\n"
+    },
+    {
+      "turn": 4,
+      "events": [
+        {
+          "unit": "Player",
+          "action": "walk",
+          "direction": "forward",
+          "from": [3, 0],
+          "to": [4, 0]
+        }
+      ],
+      "floor_map": " --------\n|    @  >|\n --------\n"
+    },
+    {
+      "turn": 5,
+      "events": [
+        {
+          "unit": "Player",
+          "action": "walk",
+          "direction": "forward",
+          "from": [4, 0],
+          "to": [5, 0]
+        }
+      ],
+      "floor_map": " --------\n|     @ >|\n --------\n"
+    },
+    {
+      "turn": 6,
+      "events": [
+        {
+          "unit": "Player",
+          "action": "walk",
+          "direction": "forward",
+          "from": [5, 0],
+          "to": [6, 0]
+        }
+      ],
+      "floor_map": " --------\n|      @>|\n --------\n"
+    },
+    {
+      "turn": 7,
+      "events": [
+        {
+          "unit": "Player",
+          "action": "walk",
+          "direction": "forward",
+          "from": [6, 0],
+          "to": [7, 0]
+        }
+      ],
+      "floor_map": " --------\n|       @|\n --------\n"
+    }
+  ],
+  "passed": true,
+  "finished": false
+}

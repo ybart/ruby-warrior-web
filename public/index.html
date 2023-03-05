@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruby Warrior</title>
+
+  <link href="/vendor/nes.min.css" rel="stylesheet" />
+  <link href="/fonts/press-start-2p.css" rel="stylesheet">
+
+  <script src="/vendor/stimulus.umd.js"></script>
+  <script src="/vendor/turbo.es2017-umd.js"></script>
+  <script src="/vendor/vs/loader.js"></script>
+  <script src="/vendor/pixi.min.js"></script>
+  <script src="/vendor/ruby_warrior.js"></script>
+
+  <link rel="stylesheet" href="/stylesheets/main.css">
+
+  <script>window.stimulus = window.Stimulus.Application.start()</script>
+  <script src="/javascript/editor_controller.js"></script>
+  <script src="/javascript/scene_controller.js"></script>
+</head>
+<body>
+  <turbo-frame id="splash">
+    <h1>Ruby Warrior</h1>
+
+    <img class="splash" src="/images/ruby.png">
+    <br>
+
+    <audio controls src="/audio/menu.mp3" autoplay></audio>
+    <br>
+
+    <div class="nes-container is-rounded is-dark">
+      <p>Une quête triomphale d'aventure, d'amour & de destin<br>
+        en quelques lignes de code</p>
+    </div>
+    <br>
+
+    <button type="button" class="nes-btn is-primary">Nouvelle Partie</button>
+    <button type="button" class="nes-btn is-primary">Continuer Partie</button>
+    <br>
+
+    <a href="/games/new.html" data-turbo-frame="modal">Nouvelle Partie</a>
+    <a href="/games/index.html" data-turbo-frame="modal">Continuer Partie</a>
+    <br>
+  </turbo-frame>
+
+  <turbo-frame id="modal">
+    <div id="modal" class="hidden">Modal</div>
+  </turbo-frame>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <turbo-frame id="modal">
+    <div id="modal">
+      <div class="nes-container with-title is-centered">
+        <p class="title">
+          Nouvelle Partie
+          <a href="/" data-turbo-frame="modal">[X]</a>
+        </p>
+
+        <div class="nes-field">
+          <label for="name">Nom du joueur</label>
+          <input type="text" id="name" class="nes-input">
+        </div>
+        <br>
+
+        <label for="default_select">Donjon</label>
+        <div class="nes-select">
+          <select required id="default_select">
+            <option value="" disabled selected hidden>Choisir...</option>
+            <option value="beginner">Débutant</option>
+            <option value="advanced">Avancé</option>
+          </select>
+        </div>
+
+        <br>
+
+        <button type="button" class="nes-btn is-primary">Commencer une partie</button>
+        <a href="/games/show.html">Commencer le jeu</a>
+      </div>
+    </div>
+  </turbo-frame>
+</body>
+</html>

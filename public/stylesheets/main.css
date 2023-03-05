@@ -1,0 +1,88 @@
+html {
+  background-color: #000;
+
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+body {
+  background-color: #424242;
+
+  width: 100vw;
+  height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
+  max-height: 100vh;
+  max-width: 177.78vh; /* 16/9 = 1.778 */
+  margin: auto;
+  position: absolute;
+  top:0; bottom:0; /* vertical center */
+  left:0; right:0; /* horizontal center */
+
+  min-height: 520px;
+  min-width: 900px;
+
+  text-align: center;
+}
+
+h1 {
+  margin-top: 8%;
+  color: orange;
+}
+
+#modal {
+  position: absolute;
+  margin: auto;
+  z-index: 2;
+  top: 15%;
+  left:0; right:0; /* horizontal center */
+  width: 450px;
+  word-break: break-word;
+  border-radius: 6px;
+  background: #bad5ff;
+}
+
+.hidden {
+  display: none;
+}
+
+.nes-container {
+  max-width: 1200px;
+  margin: auto !important;
+}
+
+body.main {
+  display: flex;
+  flex-direction: column;
+}
+/* .menu {} */
+
+.content {
+
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.instructions {
+  background-color: #212121;
+  color: #dcc;
+  padding: 5px;
+
+  font-size: 0.6em;
+  text-align: left;
+  white-space: pre-wrap;
+}
+.scene {
+  flex-grow: 1;
+}
+
+.editor {
+  flex-grow: 1;
+  text-align: left;
+}
